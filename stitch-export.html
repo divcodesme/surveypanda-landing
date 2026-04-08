@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f9f6f5",
+                    "on-primary-fixed": "#004d33",
+                    "primary-dim": "#005c3d",
+                    "on-primary-container": "#006241",
+                    "error-dim": "#9f0519",
+                    "secondary-container": "#c1ecd4",
+                    "outline-variant": "#afacac",
+                    "outline": "#787676",
+                    "primary": "#0a6947",
+                    "on-secondary-container": "#325947",
+                    "on-primary": "#c9ffdf",
+                    "surface-container-high": "#e5e2e1",
+                    "background": "#f9f6f5",
+                    "on-tertiary": "#fff0e5",
+                    "on-error": "#ffefee",
+                    "on-surface-variant": "#5c5b5b",
+                    "on-secondary": "#d0fde4",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#b31b25",
+                    "tertiary": "#854f00",
+                    "secondary-dim": "#305745",
+                    "surface-dim": "#d6d4d3",
+                    "secondary-fixed": "#c1ecd4",
+                    "primary-container": "#a7face",
+                    "surface-container": "#eae7e7",
+                    "surface-bright": "#f9f6f5",
+                    "error-container": "#fb5151",
+                    "on-tertiary-container": "#4c2b00",
+                    "primary-fixed": "#a7face",
+                    "surface-container-highest": "#dfdcdc",
+                    "inverse-on-surface": "#9e9c9c",
+                    "secondary-fixed-dim": "#b3dec6",
+                    "on-tertiary-fixed": "#2b1600",
+                    "on-secondary-fixed": "#1f4735",
+                    "surface-tint": "#0a6947",
+                    "tertiary-container": "#fd9d1a",
+                    "on-error-container": "#570008",
+                    "inverse-surface": "#0e0e0e",
+                    "tertiary-fixed-dim": "#ed9000",
+                    "tertiary-dim": "#744400",
+                    "primary-fixed-dim": "#99ebc0",
+                    "on-surface": "#2f2e2e",
+                    "on-secondary-fixed-variant": "#3c6351",
+                    "secondary": "#3c6351",
+                    "on-tertiary-fixed-variant": "#583300",
+                    "on-primary-fixed-variant": "#126c4a",
+                    "surface-container-low": "#f3f0ef",
+                    "surface-variant": "#dfdcdc",
+                    "on-background": "#2f2e2e",
+                    "tertiary-fixed": "#fd9d1a",
+                    "inverse-primary": "#a7face"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ambient-shadow {
+            box-shadow: 0 20px 40px -20px rgba(47, 46, 46, 0.06);
+        }
+        .bamboo-gradient {
+            background: linear-gradient(135deg, #0a6947 0%, #a7face 100%);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-xl shadow-black/5">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-primary tracking-tighter font-headline">SurveyPanda</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-primary border-b-2 border-primary font-headline font-semibold" href="#">Product</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-semibold" href="#">Features</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-semibold" href="#">Pricing</a>
+</div>
+<div class="flex items-center space-x-6">
+<a class="text-on-surface-variant font-headline font-semibold" href="#">Login</a>
+<a class="bamboo-gradient text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:scale-95 duration-200" href="#">Get Started</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-32 pb-20 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 space-y-8">
+<div class="inline-flex items-center bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase">
+<span class="material-symbols-outlined text-[14px] mr-2" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                    AI-Powered Insights
+                </div>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary leading-[1.1] tracking-tight">
+                    Professional Surveys, <br/><span class="text-on-surface">Organic Growth</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-lg leading-relaxed">
+                    Build AI-powered surveys in seconds. Our bamboo-inspired interface makes data collection as natural as a morning walk in the forest.
+                </p>
+<div class="flex flex-col sm:flex-row items-center gap-4">
+<button class="w-full sm:w-auto bamboo-gradient text-on-primary px-10 py-4 rounded-full font-headline font-bold text-lg hover:scale-95 duration-200 ambient-shadow">
+                        Start Surveying Free
+                    </button>
+<button class="w-full sm:w-auto bg-surface-container-highest text-on-surface px-10 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-container-high transition-colors">
+                        View Demo
+                    </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/30 rounded-full blur-3xl"></div>
+<div class="relative z-10 ambient-shadow rounded-[3rem] overflow-hidden bg-surface-container-low border-ghost">
+<img alt="Professional Panda Mascot" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700" data-alt="A friendly and modern 3D artistic panda mascot wearing a professional blue coat or blazer, soft studio lighting, organic background" src="https://lh3.googleusercontent.com/aida/ADBb0uh6RW6_Z6Mxhnf8Mvjvdm8zKiY6kAw81hR6eDrJJjvau_BdTujPy6CgddVxv-vtJ8ozEVZh6rneC3V63IZkanGL6Rr-JBv_NkcxaVUVlVl7DvgC4kCPQvZRJQ5QBtSgescwK8VwBULX4fPUFv8RJidrFx8BcENfIjpHfaaI9nzws5TYIwXym5K_T5mLD8-hPRCJRSKPQNfpjumwL9YPVuC8ThwA1JAejT6_HnuFt-dzDJTXSK74YrEgnNzkh2wWfvVPGslx_nAFgw"/>
+</div>
+<!-- Floating Decorative Element -->
+<div class="absolute -bottom-8 -right-8 bg-surface-container-lowest p-6 rounded-2xl shadow-2xl z-20 flex items-center space-x-4 max-w-[200px]">
+<div class="bg-primary-container p-3 rounded-xl">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+</div>
+<div>
+<div class="text-xs text-on-surface-variant">Growth Rate</div>
+<div class="text-lg font-bold text-primary">+124%</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted By -->
+<section class="py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<p class="text-center text-sm font-bold text-outline uppercase tracking-[0.2em] mb-12">Trusted by global nature-tech leaders</p>
+<div class="flex flex-wrap justify-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="text-2xl font-bold font-headline text-on-surface-variant italic">EcoStream</div>
+<div class="text-2xl font-bold font-headline text-on-surface-variant">LeafLogic</div>
+<div class="text-2xl font-bold font-headline text-on-surface-variant">GreenPath</div>
+<div class="text-2xl font-bold font-headline text-on-surface-variant">TerraSync</div>
+<div class="text-2xl font-bold font-headline text-on-surface-variant">BioSphere</div>
+</div>
+</div>
+</section>
+<!-- Features Grid -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface mb-6">Intuitive Tools for <span class="text-primary">Deep Intelligence</span></h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">We've combined the serenity of nature with the precision of advanced artificial intelligence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2rem] ambient-shadow hover:-translate-y-2 transition-transform duration-300">
+<div class="bg-primary-container w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+</div>
+<h3 class="text-xl font-headline font-extrabold mb-4">AI-Powered Builder</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Describe your survey in plain English and our AI prepares the perfect question flow in seconds.</p>
+<div class="mt-8 overflow-hidden rounded-xl h-32 bg-surface-container-low">
+<img alt="AI Feature" class="w-full h-full object-cover" data-alt="3D rendered abstract glowing brain icon with floating data nodes in emerald green and white tones, clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPe_4CV5BaAaTQR0z_V3lFIAjpuUNcOOVZ4RDGwrQ4VEqV2gSrZeiUUFwDYMcgIqCHekyV_Q30dZ0mbolLgqzo8-NkLefd3tbyfl58l98XDnF2wSSmAmLVXmar8tmU-KfunT6ZnSgS7ioEN3kfkzlCzS6tdO3gYCxoqp6aC_WN5i02wYfX-qtT2psFcQw466fWMMb4AhCmivd-OZpnkK-5WjuIGhsYXlWL-1igx4h6LxAvRKWBQARvJYabkgRPIFwPYqdc1CAg2XLx"/>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2rem] ambient-shadow hover:-translate-y-2 transition-transform duration-300">
+<div class="bg-secondary-container w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl">analytics</span>
+</div>
+<h3 class="text-xl font-headline font-extrabold mb-4">Real-time Analytics</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Instant visual intelligence. Watch your data sprout and grow into actionable charts in real-time.</p>
+<div class="mt-8 overflow-hidden rounded-xl h-32 bg-surface-container-low">
+<img alt="Analytics Feature" class="w-full h-full object-cover" data-alt="3D visualization of floating green glass bar charts and transparent cylinders on a light neutral surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjrE7VK1Rwg4CMgrw2Bcb7iWOoo3fAWw-60uge70LkPRmgcadoW1MuMcG_INctK1tyZT0BWFbAK8eRF_z6UGthu6xCesTqRIlsh8zwaWc5207Df_AyUO9eULu42wVP1G9EV7oRRGwMcdGh6AIiYwZPdcmxF993_cjqX2ynp1ozpLJP-mp9zhVzcyIGv61PLLuZalUihVFmol5PxMBIwGx3S6KCHASaMsX6DgNFIrJuVQlojlucxs_caRSR3fyqA3tKap54LUnP5ASL"/>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2rem] ambient-shadow hover:-translate-y-2 transition-transform duration-300">
+<div class="bg-tertiary-container w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl">lightbulb</span>
+</div>
+<h3 class="text-xl font-headline font-extrabold mb-4">Smart Decisions</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">AI-driven actionable insights that highlight the 'Why' behind every respondent's 'What'.</p>
+<div class="mt-8 overflow-hidden rounded-xl h-32 bg-surface-container-low">
+<img alt="Decisions Feature" class="w-full h-full object-cover" data-alt="3D stylized lightbulb made of polished wood and green glass glowing softly on a minimal pedestal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPhcrHLQl1ItB0fvM0RbCSZUQm4vmJIfdmtR64VPgOxePPsNJI45ntHM9_ym4wbjWZSk-7gUZKT_g4fp-Yvut9gxCKLH_umGL3UnSTtxuVytmyjoYZWJ9Ifu7CglaAhCzhGDqdBqkrmE1SPjeCD5AT_Idc1iL7rlm1iFRI1FAD06jCqK81Q7wpEuVzQNTtM7P6DuqR9oVfvVpV06zGMbL4wrgrblSm3s6JpIsTyoJZuv-5-_-wPcFo9s0qxHF2rDuyT76B_Z1sKUWQ"/>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2rem] ambient-shadow hover:-translate-y-2 transition-transform duration-300">
+<div class="bg-primary-container w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">glass_cup</span>
+</div>
+<h3 class="text-xl font-headline font-extrabold mb-4">Behavior Prediction</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Anticipate respondent needs with machine learning models tuned for human nuance.</p>
+<div class="mt-8 overflow-hidden rounded-xl h-32 bg-surface-container-low">
+<img alt="Prediction Feature" class="w-full h-full object-cover" data-alt="abstract 3D pattern of interconnected organic spheres in shades of forest green and mint, soft depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABg_eQcQvloP1bkMt0SyBZVWnlBm7iNUWV4pwjrVFlPYMl6WvX7x9fDtyXGbooDoeyTCt0ovfHIMFdo4O2oHN0cgWhB_z6zKADkVeWhI7G0HTV7pvcOVEuBvErL3usyGfBWB-zMres9M2HzXLh5_tfTbLgGHPqVmz2q99dp_-V-xsNoW0OTdcQIyPp95UHgMWH71ZOFpMv3ruOoqXKhzjhVYs51psB6EP3CQXzdMWPk7PRzSDZ7tHldNZiBCZ7MIpoO23KRG1p3WYC"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-5xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-headline font-extrabold mb-4">Transparent Pricing for Every Scale</h2>
+<p class="text-on-surface-variant">Whether you're just a sprout or a giant bamboo forest.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<!-- Lite Plan -->
+<div class="bg-surface-container-lowest p-12 rounded-[3rem] ambient-shadow border-ghost relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 text-on-surface/5 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[120px]">eco</span>
+</div>
+<h3 class="text-2xl font-headline font-extrabold mb-2">Lite</h3>
+<p class="text-on-surface-variant mb-8">For play and exploration</p>
+<div class="flex items-baseline mb-8">
+<span class="text-5xl font-black text-primary">$0</span>
+<span class="text-on-surface-variant ml-2 font-bold">forever</span>
+</div>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center space-x-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Up to 100 responses/mo</span>
+</li>
+<li class="flex items-center space-x-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Standard 3D Builder</span>
+</li>
+<li class="flex items-center space-x-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Community Support</span>
+</li>
+</ul>
+<button class="w-full py-4 rounded-full border-2 border-primary-container text-primary font-bold font-headline hover:bg-primary-container/10 transition-colors">
+                        Start for Free
+                    </button>
+</div>
+<!-- Professional Plan -->
+<div class="bamboo-gradient p-12 rounded-[3rem] ambient-shadow relative overflow-hidden text-on-primary">
+<div class="absolute top-0 right-0 p-8 text-white/10">
+<span class="material-symbols-outlined text-[120px]">forest</span>
+</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-headline font-extrabold mb-2">Self-Hosted</h3>
+<p class="text-on-primary/80 mb-8">Professional control &amp; enterprise scale</p>
+<div class="flex items-baseline mb-8">
+<span class="text-3xl font-black">Custom Pricing</span>
+</div>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Unlimited responses</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Complete Data Ownership</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>White-label branding</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>24/7 Premium Support</span>
+</li>
+</ul>
+<button class="w-full py-4 rounded-full bg-surface text-primary font-bold font-headline hover:scale-95 transition-transform duration-200 shadow-lg">
+                            Talk to Sales
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-24 px-8 overflow-hidden">
+<div class="max-w-5xl mx-auto bg-surface-container-lowest p-12 md:p-20 rounded-[4rem] relative ambient-shadow text-center">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-tertiary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface mb-8">Ready to let your insights grow?</h2>
+<p class="text-lg text-on-surface-variant max-w-2xl mx-auto mb-12 leading-relaxed">
+                    Join over 10,000 teams using SurveyPanda to cultivate deeper relationships with their audience.
+                </p>
+<button class="bamboo-gradient text-on-primary px-12 py-5 rounded-full font-headline font-bold text-xl hover:scale-95 duration-200 ambient-shadow">
+                    Start Your Forest Today
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 rounded-t-[3rem] mt-20 w-full px-12 py-16 grid grid-cols-1 md:grid-cols-4 gap-12 font-['Manrope'] text-sm">
+<div class="space-y-6">
+<div class="text-xl font-bold text-emerald-900 tracking-tighter">SurveyPanda</div>
+<p class="text-slate-500 leading-relaxed">
+                Empowering teams to make better decisions through organic data harvesting and AI precision.
+            </p>
+</div>
+<div>
+<h4 class="font-bold text-emerald-800 mb-6 uppercase tracking-wider">Product</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-emerald-600 underline transition-opacity opacity-80 hover:opacity-100" href="#">Documentation</a></li>
+<li><a class="text-slate-500 hover:text-emerald-600 underline transition-opacity opacity-80 hover:opacity-100" href="#">Features</a></li>
+<li><a class="text-slate-500 hover:text-emerald-600 underline transition-opacity opacity-80 hover:opacity-100" href="#">Integrations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-emerald-800 mb-6 uppercase tracking-wider">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-emerald-600 underline transition-opacity opacity-80 hover:opacity-100" href="#">Contact Us</a></li>
+<li><a class="text-slate-500 hover:text-emerald-600 underline transition-opacity opacity-80 hover:opacity-100" href="#">Twitter</a></li>
+<li><a class="text-slate-500 hover:text-emerald-600 underline transition-opacity opacity-80 hover:opacity-100" href="#">LinkedIn</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-emerald-800 mb-6 uppercase tracking-wider">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-emerald-600 underline transition-opacity opacity-80 hover:opacity-100" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-emerald-600 underline transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="md:col-span-4 pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500">© 2024 SurveyPanda Atelier. Built with Organic Precision.</p>
+<div class="flex space-x-6">
+<span class="material-symbols-outlined text-emerald-800 cursor-pointer">language</span>
+<span class="material-symbols-outlined text-emerald-800 cursor-pointer">eco</span>
+</div>
+</div>
+</footer>
+</body></html>
