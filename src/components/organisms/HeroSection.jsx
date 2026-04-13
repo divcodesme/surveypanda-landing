@@ -63,8 +63,8 @@ export function HeroSection() {
               maxW="lg"
               lineHeight="1.7"
             >
-              Build AI-powered surveys in seconds. Our bamboo-inspired interface makes data
-              collection as natural as a morning walk in the forest.
+              Build and launch AI-powered surveys in minutes, then turn every response into
+              clear, confident decisions.
             </Text>
 
             <HStack width="full" gap="4" flexWrap={{ base: 'wrap', sm: 'nowrap' }}>

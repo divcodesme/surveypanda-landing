@@ -56,8 +56,8 @@ export function FinalCtaSection() {
               maxW="2xl"
               lineHeight="1.7"
             >
-              Join over 10,000 teams using SurveyPanda to cultivate deeper relationships with their
-              audience.
+              Be among the first teams to use SurveyPanda and build stronger relationships with
+              your audience from day one.
             </Text>
 
             <GradientButton px="12" py="7" fontSize={{ base: 'lg', md: 'xl' }}>

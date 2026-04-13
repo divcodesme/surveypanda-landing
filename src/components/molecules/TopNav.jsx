@@ -1,4 +1,5 @@
 import { Box, Container, Flex, HStack } from '@chakra-ui/react'
+import { useState } from 'react'
 
 import { designTokens } from '@/theme/designTokens'
 
@@ -7,6 +8,8 @@ import { GradientButton } from '../atoms/GradientButton'
 import { NavLink } from '../atoms/NavLink'
 
 export function TopNav() {
+  const [activeItem, setActiveItem] = useState('product')
+
   return (
     <Box
       as="nav"
@@ -24,11 +27,27 @@ export function TopNav() {
           <BrandWordmark />
 
           <HStack gap="10" display={{ base: 'none', md: 'flex' }}>
-            <NavLink href="#" active>
+            <NavLink
+              href="#"
+              active={activeItem === 'product'}
+              onClick={() => setActiveItem('product')}
+            >
               Product
             </NavLink>
-            <NavLink href="#features">Features</NavLink>
-            <NavLink href="#pricing">Pricing</NavLink>
+            <NavLink
+              href="#features"
+              active={activeItem === 'features'}
+              onClick={() => setActiveItem('features')}
+            >
+              Features
+            </NavLink>
+            <NavLink
+              href="#pricing"
+              active={activeItem === 'pricing'}
+              onClick={() => setActiveItem('pricing')}
+            >
+              Pricing
+            </NavLink>
           </HStack>
 
           <HStack gap="6">

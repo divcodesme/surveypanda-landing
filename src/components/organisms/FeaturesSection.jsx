@@ -1,8 +1,10 @@
 import { Box, Container, Heading, SimpleGrid, Text, VStack } from '@chakra-ui/react'
 import { Brain, ChartColumnIncreasing, Lightbulb, Trophy } from 'lucide-react'
 
-import aiBuilderImg from '@/assets/ai-builder.svg'
-import behaviorPredictionImg from '@/assets/behavior-prediction.svg'
+import aiBuilderImg from '@/assets/feature-ai-builder.svg'
+import behaviorPredictionImg from '@/assets/feature-behavior-prediction.svg'
+import realtimeAnalyticsImg from '@/assets/feature-realtime-analytics.svg'
+import smartDecisionsImg from '@/assets/feature-smart-decisions.svg'
 import { designTokens } from '@/theme/designTokens'
 
 import { FeatureCard } from '../molecules/FeatureCard'
@@ -25,9 +27,8 @@ const features = [
     icon: <ChartColumnIncreasing size={28} />,
     accentBg: designTokens.colors.secondaryContainer,
     accentColor: designTokens.colors.secondary,
-    imageSrc:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCjrE7VK1Rwg4CMgrw2Bcb7iWOoo3fAWw-60uge70LkPRmgcadoW1MuMcG_INctK1tyZT0BWFbAK8eRF_z6UGthu6xCesTqRIlsh8zwaWc5207Df_AyUO9eULu42wVP1G9EV7oRRGwMcdGh6AIiYwZPdcmxF993_cjqX2ynp1ozpLJP-mp9zhVzcyIGv61PLLuZalUihVFmol5PxMBIwGx3S6KCHASaMsX6DgNFIrJuVQlojlucxs_caRSR3fyqA3tKap54LUnP5ASL',
-    imageAlt: 'Analytics Feature',
+    imageSrc: realtimeAnalyticsImg,
+    imageAlt: 'Real-time Analytics illustration',
   },
   {
     title: 'Smart Decisions',
@@ -36,9 +37,8 @@ const features = [
     icon: <Lightbulb size={28} />,
     accentBg: `${designTokens.colors.tertiaryContainer}CC`,
     accentColor: designTokens.colors.tertiary,
-    imageSrc:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAPhcrHLQl1ItB0fvM0RbCSZUQm4vmJIfdmtR64VPgOxePPsNJI45ntHM9_ym4wbjWZSk-7gUZKT_g4fp-Yvut9gxCKLH_umGL3UnSTtxuVytmyjoYZWJ9Ifu7CglaAhCzhGDqdBqkrmE1SPjeCD5AT_Idc1iL7rlm1iFRI1FAD06jCqK81Q7wpEuVzQNTtM7P6DuqR9oVfvVpV06zGMbL4wrgrblSm3s6JpIsTyoJZuv-5-_-wPcFo9s0qxHF2rDuyT76B_Z1sKUWQ',
-    imageAlt: 'Decisions Feature',
+    imageSrc: smartDecisionsImg,
+    imageAlt: 'Smart Decisions illustration',
   },
   {
     title: 'Behavior Prediction',
